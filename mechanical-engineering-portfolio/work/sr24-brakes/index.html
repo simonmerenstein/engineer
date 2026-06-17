@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SR24 Brakes | Simon Merenstein</title>
+    <meta name="description" content="SR24 brake caliper, rotor, and braking system design page by Simon Merenstein.">
+    <link rel="stylesheet" href="../../assets/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../../index.html">Simon Merenstein</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../../index.html">Work</a>
+        <a href="../../about.html">About</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="project-hero">
+        <p class="breadcrumb"><a href="../../index.html">Work</a> / SR24 Brakes</p>
+        <h1 class="page-title">SR24 Brakes Design</h1>
+        <p class="dek">
+          Brake caliper, rotor, piston, slide pin, seal, and mounting design for the SR24 Baja SAE vehicle.
+          The work reduced system mass, improved reliability, and correlated FEA to dyno and vehicle testing.
+        </p>
+        <div class="project-meta">
+          <span class="tag">CWRU Motorsports</span>
+          <span class="tag">Brakes and Throttle Lead</span>
+          <span class="tag">2023-2024</span>
+          <span class="tag">Design / Manufacturing / Validation</span>
+        </div>
+        <figure class="hero-image contain">
+          <img src="../../assets/img/sr24-caliper-render.webp" alt="SR24 brake caliper render">
+        </figure>
+      </section>
+
+      <section class="stats-grid" aria-label="SR24 brake highlights">
+        <div class="stat"><strong>14.43%</strong><span>total braking system weight reduction from SR23 to SR24.</span></div>
+        <div class="stat"><strong>0.011 in</strong><span>measured caliper deflection at 2000 psi.</span></div>
+        <div class="stat"><strong>832 psi</strong><span>tested pressure to lock brakes, within 6% of analysis.</span></div>
+        <div class="stat"><strong>41m</strong><span>estimated CNC cycle time for the caliper program across 25 toolpaths.</span></div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>Requirements</h2>
+          <p>
+            The brakes package had to remain reliable through endurance while reducing mass, controlling
+            caliper deflection, preserving thermal performance, and improving serviceability.
+          </p>
+        </div>
+        <div class="two-col">
+          <ul class="fact-list">
+            <li><strong>Mass</strong><span>Reduce subsystem weight by at least 10% and improve unsprung-mass efficiency.</span></li>
+            <li><strong>Deflection</strong><span>Limit caliper deflection at 2000 psi and validate with a dial indicator test.</span></li>
+            <li><strong>Thermal</strong><span>Keep rotor temperature under 250 F during endurance-style operation.</span></li>
+          </ul>
+          <ul class="fact-list">
+            <li><strong>Locking force</strong><span>Maintain force-to-lock under 100 lb throughout runtime.</span></li>
+            <li><strong>Reliability</strong><span>Complete competition events without brake hardware removing the car from the race.</span></li>
+            <li><strong>Service</strong><span>Improve wrench access, caliper sliding, pad wear behavior, and manufacturability.</span></li>
+          </ul>
+        </div>
+        <figure class="image-card contain">
+          <button class="image-button" data-lightbox="../../assets/img/sr24-brakes-requirements-table.webp" data-caption="SR24 brakes target design specification">
+            <img src="../../assets/img/sr24-brakes-requirements-table.webp" alt="SR24 brakes target design specification">
+          </button>
+          <figcaption>Target design specification from the brake system design package.</figcaption>
+        </figure>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>Project Cycle</h2>
+          <p>
+            SR24 brakes followed a year-long design cycle from requirements through design reviews,
+            manufacturing, testing, competition, and future-change review.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="step">
+            <time>Summer 2023</time>
+            <div>
+              <h3>Research and concept selection</h3>
+              <p>Used Excel and Matlab brake calculations to size pressures, master cylinders, calipers, and rotors for full lock.</p>
+            </div>
+          </div>
+          <div class="step">
+            <time>Fall 2023</time>
+            <div>
+              <h3>Design reviews and CAD</h3>
+              <p>Optimized caliper body geometry, piston length, slide pin length, pad contact, rotor layout, and seal cross-section.</p>
+            </div>
+          </div>
+          <div class="step">
+            <time>Jan-Mar</time>
+            <div>
+              <h3>Manufacturing</h3>
+              <p>CNC-machined calipers on the Haas VF-3, waterjet rotors and mounts, turned pistons and bushings, and iterated assembly fixes.</p>
+            </div>
+          </div>
+          <div class="step">
+            <time>Apr 2024</time>
+            <div>
+              <h3>Testing and competition</h3>
+              <p>Validated deflection, pressure, rotor temperature, brake drag, and driver performance before the first competition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>Selected Engineering Work</h2>
+          <p>Design details from the SR24 brake caliper, rotor, and validation package.</p>
+        </div>
+        <div class="image-grid">
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-pad-rotor-cad.webp" data-caption="SR24 pad and rotor contact CAD">
+              <img src="../../assets/img/sr24-pad-rotor-cad.webp" alt="SR24 pad and rotor contact CAD">
+            </button>
+            <figcaption>Pad abrasive area fully within the rotor swept area for stronger wear and contact behavior.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-caliper-fea.webp" data-caption="SR24 caliper factor of safety analysis">
+              <img src="../../assets/img/sr24-caliper-fea.webp" alt="SR24 caliper FEA">
+            </button>
+            <figcaption>Caliper FEA under hydraulic and pad reaction loading.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-thermal-fea.webp" data-caption="SR24 brake thermal analysis">
+              <img src="../../assets/img/sr24-thermal-fea.webp" alt="SR24 brake thermal FEA">
+            </button>
+            <figcaption>Thermal simulation of braking energy through rotor, pad, and caliper.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-rotor-assembly.webp" data-caption="SR24 rotor and brake assembly">
+              <img src="../../assets/img/sr24-rotor-assembly.webp" alt="SR24 rotor and brake assembly">
+            </button>
+            <figcaption>Rotor and caliper assembly view for package review.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-vehicle-photo.webp" data-caption="SR24 vehicle testing and competition">
+              <img src="../../assets/img/sr24-vehicle-photo.webp" alt="SR24 vehicle">
+            </button>
+            <figcaption>SR24 vehicle during the competition and testing season.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-caliper-render.webp" data-caption="SR24 brake caliper render">
+              <img src="../../assets/img/sr24-caliper-render.webp" alt="SR24 brake caliper render">
+            </button>
+            <figcaption>Floating caliper concept with redesigned geometry, piston, and slide pin package.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-caliper-exploded.webp" data-caption="SR24 brake caliper exploded assembly">
+              <img src="../../assets/img/sr24-caliper-exploded.webp" alt="SR24 brake caliper exploded assembly">
+            </button>
+            <figcaption>Exploded assembly view showing caliper body, mount, piston, bushings, and slide pins.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>Analysis and Manufacturing Details</h2>
+          <p>
+            The added Rocket Lab interview deck provided more precise documentation of load cases, contact
+            assumptions, CNC sequencing, tooling, and issue resolution.
+          </p>
+        </div>
+        <div class="two-col">
+          <ul class="fact-list">
+            <li><strong>Assembly simulation</strong><span>Distributed loads through slide pins, bushings, pads, mount ears, and caliper legs instead of relying only on isolated part loads.</span></li>
+            <li><strong>Boundary conditions</strong><span>Mount fixed at upright/bolt interfaces; virtual walls at pad faces 1/8 in apart; piston-side wall representing hydraulic input.</span></li>
+            <li><strong>Loads</strong><span>2000 psi applied inside the piston bore and on pad 1; 4200 lbf-in torque applied on pad faces.</span></li>
+          </ul>
+          <ul class="fact-list">
+            <li><strong>Toolpaths</strong><span>HSMWorks program used 7 tools, 25 toolpaths, and an estimated 41 min 16 sec cycle time.</span></li>
+            <li><strong>Operations</strong><span>Op 1 piston-bore side roughing/finishing; Op 2 flipped 180 degrees for remaining geometry; Op 3 rotated 90 degrees to machine the slot.</span></li>
+            <li><strong>Process fixes</strong><span>Cut thread reliefs, remachined bushings for press fit, improved tap setup, rinsed parts after coolant exposure, and planned better EPDM seal cutting.</span></li>
+          </ul>
+        </div>
+        <div class="image-grid">
+          <figure class="image-card">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-cnc-operation.webp" data-caption="SR24 caliper CNC operation">
+              <img src="../../assets/img/sr24-cnc-operation.webp" alt="SR24 caliper CNC operation">
+            </button>
+            <figcaption>Caliper machining on the Haas VF-3 with workholding and in-process geometry visible.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/sr24-cam-metrics.webp" data-caption="SR24 caliper CAM metrics">
+              <img src="../../assets/img/sr24-cam-metrics.webp" alt="SR24 caliper CAM metrics">
+            </button>
+            <figcaption>CAM metrics: 25 operations, 7 tools, 2324 in cutting distance, and 41 min 16 sec estimated cycle time.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>Results</h2>
+          <p>
+            The design met or exceeded the core brake requirements and stayed reliable through competition.
+          </p>
+        </div>
+        <ul class="plain-list">
+          <li>Total brake system mass dropped from 5.66 lb to 4.84 lb, a 14.43% reduction.</li>
+          <li>Unsprung brake mass dropped from 3.82 lb to 3.34 lb, a 12.40% reduction.</li>
+          <li>Piston mass dropped from 0.15 lb to 0.046 lb by switching from stainless steel to 6061 aluminum.</li>
+          <li>Caliper deflection correlated to testing: 0.012 in predicted versus 0.011 in measured.</li>
+          <li>Rotor temperature correlated to testing: 182 F predicted versus 160 F measured.</li>
+          <li>Pressure to lock correlated to testing: 777.5 psi predicted versus 832 psi measured.</li>
+          <li>Brakes were the first subsystem with all parts manufactured and assembled.</li>
+          <li>Machined brake components had zero failures in competition and never pulled the vehicle out of a race.</li>
+          <li>Stock costs were reduced by shrinking the part envelope and improving machining strategy.</li>
+          <li>Competition results included 9th overall at Baja SAE California and 6th overall at both Williamsport and Michigan.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Simon Merenstein</span>
+      <span><a href="../../index.html">Back to work</a></span>
+    </footer>
+    <script src="../../assets/site.js"></script>
+  </body>
+</html>
