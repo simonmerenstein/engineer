@@ -7,7 +7,7 @@ This is a static, GitHub Pages-ready portfolio site modeled after the simple pro
 - `index.html` is the main intro, background, projects, and contact page.
 - `about.html` and `contact.html` are legacy standalone pages kept out of the main navigation.
 - `work/` contains project pages for SR25, the master cylinder, SR24 brakes, Honda, General Atomics, and Tylok.
-- `assets/img/` contains compressed WebP images selected from the provided presentations and public-safe generated visuals for Honda and General Atomics.
+- `assets/img/` contains compressed images selected from the provided presentations, plus simple logo images for Honda and General Atomics.
 
 ## Publishing to GitHub Pages
 
@@ -36,5 +36,5 @@ That is not wrong, but it is a little heavier than needed for this first publish
 
 - Honda images from the attached materials were not included.
 - General Atomics project photos were not included.
-- The Honda and General Atomics visuals are generic, non-branded, public-safe illustrations.
+- The Honda and General Atomics pages use simple logo images instead of project photos.
 - Phone number is intentionally omitted from the public site.

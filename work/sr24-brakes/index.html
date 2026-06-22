@@ -25,7 +25,7 @@
           <span class="tag">CWRU Motorsports</span>
           <span class="tag">Brakes and Throttle Lead</span>
           <span class="tag">2023-2024</span>
-          <span class="tag">Design / Manufacturing / Validation</span>
+          <span class="tag">Design / Analysis / Validation</span>
         </div>
         <figure class="hero-image contain">
           <img src="../../assets/img/sr24-caliper-render.webp" alt="SR24 brake caliper render">
@@ -36,7 +36,7 @@
         <div class="stat"><strong>14.43%</strong><span>total braking system weight reduction from SR23 to SR24.</span></div>
         <div class="stat"><strong>0.011 in</strong><span>measured caliper deflection at 2000 psi.</span></div>
         <div class="stat"><strong>832 psi</strong><span>tested pressure to lock brakes, within 6% of analysis.</span></div>
-        <div class="stat"><strong>41m</strong><span>estimated CNC cycle time for the caliper program across 25 toolpaths.</span></div>
+        <div class="stat"><strong>0 failures</strong><span>machined brake components failed during competition.</span></div>
       </section>
 
       <section class="project-section">
@@ -93,8 +93,8 @@
           <div class="step">
             <time>Jan-Mar</time>
             <div>
-              <h3>Manufacturing</h3>
-              <p>CNC-machined calipers on the Haas VF-3, waterjet rotors and mounts, turned pistons and bushings, and iterated assembly fixes.</p>
+              <h3>Build and assembly</h3>
+              <p>Built and assembled brake hardware for vehicle integration while resolving fit, sliding, and serviceability issues.</p>
             </div>
           </div>
           <div class="step">
@@ -110,7 +110,7 @@
       <section class="project-section">
         <div class="section-head">
           <h2>Selected Engineering Work</h2>
-          <p>Design details from the SR24 brake caliper, rotor, and validation package.</p>
+          <p>Design and validation details from the SR24 brake caliper, rotor, and system package.</p>
         </div>
         <div class="image-grid">
           <figure class="image-card contain">
@@ -160,37 +160,23 @@
 
       <section class="project-section">
         <div class="section-head">
-          <h2>Analysis and Manufacturing Details</h2>
+          <h2>Analysis and Testing</h2>
           <p>
-            The added Rocket Lab interview deck provided more precise documentation of load cases, contact
-            assumptions, CNC sequencing, tooling, and issue resolution.
+            The project connected preliminary brake calculations, part-level design, assembly-level FEA,
+            brake dyno work, and vehicle testing into one validation loop.
           </p>
         </div>
         <div class="two-col">
           <ul class="fact-list">
-            <li><strong>Assembly simulation</strong><span>Distributed loads through slide pins, bushings, pads, mount ears, and caliper legs instead of relying only on isolated part loads.</span></li>
-            <li><strong>Boundary conditions</strong><span>Mount fixed at upright/bolt interfaces; virtual walls at pad faces 1/8 in apart; piston-side wall representing hydraulic input.</span></li>
-            <li><strong>Loads</strong><span>2000 psi applied inside the piston bore and on pad 1; 4200 lbf-in torque applied on pad faces.</span></li>
+            <li><strong>System calculations</strong><span>Used Excel and Matlab to determine pressure needed to lock the brakes and select master cylinder and caliper diameters.</span></li>
+            <li><strong>Assembly-level FEA</strong><span>Distributed loads through slide pins, bushings, brake pads, mount ears, and caliper legs to better represent component interactions.</span></li>
+            <li><strong>Part-level FEA</strong><span>Compared SR23 and SR24 caliper deflection while checking piston and rotor factors of safety.</span></li>
           </ul>
           <ul class="fact-list">
-            <li><strong>Toolpaths</strong><span>HSMWorks program used 7 tools, 25 toolpaths, and an estimated 41 min 16 sec cycle time.</span></li>
-            <li><strong>Operations</strong><span>Op 1 piston-bore side roughing/finishing; Op 2 flipped 180 degrees for remaining geometry; Op 3 rotated 90 degrees to machine the slot.</span></li>
-            <li><strong>Process fixes</strong><span>Cut thread reliefs, remachined bushings for press fit, improved tap setup, rinsed parts after coolant exposure, and planned better EPDM seal cutting.</span></li>
+            <li><strong>Brake dyno</strong><span>Tested calipers and rotors for pressure, temperature, coefficient of friction, and locking behavior.</span></li>
+            <li><strong>Deflection test</strong><span>Used a dial indicator to measure caliper displacement at multiple pressures and validate simulation accuracy.</span></li>
+            <li><strong>Correlation</strong><span>Compared analysis to test data for caliper deflection, rotor temperature, and pressure to lock.</span></li>
           </ul>
-        </div>
-        <div class="image-grid">
-          <figure class="image-card">
-            <button class="image-button" data-lightbox="../../assets/img/sr24-cnc-operation.webp" data-caption="SR24 caliper CNC operation">
-              <img src="../../assets/img/sr24-cnc-operation.webp" alt="SR24 caliper CNC operation">
-            </button>
-            <figcaption>Caliper machining on the Haas VF-3 with workholding and in-process geometry visible.</figcaption>
-          </figure>
-          <figure class="image-card contain">
-            <button class="image-button" data-lightbox="../../assets/img/sr24-cam-metrics.webp" data-caption="SR24 caliper CAM metrics">
-              <img src="../../assets/img/sr24-cam-metrics.webp" alt="SR24 caliper CAM metrics">
-            </button>
-            <figcaption>CAM metrics: 25 operations, 7 tools, 2324 in cutting distance, and 41 min 16 sec estimated cycle time.</figcaption>
-          </figure>
         </div>
       </section>
 
@@ -208,7 +194,6 @@
           <li>Caliper deflection correlated to testing: 0.012 in predicted versus 0.011 in measured.</li>
           <li>Rotor temperature correlated to testing: 182 F predicted versus 160 F measured.</li>
           <li>Pressure to lock correlated to testing: 777.5 psi predicted versus 832 psi measured.</li>
-          <li>Brakes were the first subsystem with all parts manufactured and assembled.</li>
           <li>Machined brake components had zero failures in competition and never pulled the vehicle out of a race.</li>
           <li>Stock costs were reduced by shrinking the part envelope and improving machining strategy.</li>
           <li>Competition results included 9th overall at Baja SAE California and 6th overall at both Williamsport and Michigan.</li>
