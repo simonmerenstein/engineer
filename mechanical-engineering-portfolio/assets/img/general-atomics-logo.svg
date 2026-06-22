@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">General Atomics logo</title>
+  <desc id="desc">General Atomics wordmark on a light background.</desc>
+  <rect width="1600" height="1000" fill="#f8f8f5"/>
+  <rect x="120" y="120" width="1360" height="760" rx="28" fill="#ffffff" stroke="#d9dfdf" stroke-width="3"/>
+  <g transform="translate(800 410)">
+    <ellipse cx="0" cy="0" rx="210" ry="72" fill="none" stroke="#176b87" stroke-width="16" transform="rotate(18)"/>
+    <ellipse cx="0" cy="0" rx="210" ry="72" fill="none" stroke="#176b87" stroke-width="16" transform="rotate(-42)"/>
+    <circle cx="0" cy="0" r="26" fill="#176b87"/>
+  </g>
+  <text x="800" y="655"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="112"
+        font-weight="700"
+        letter-spacing="10"
+        fill="#202426">GENERAL ATOMICS</text>
+</svg>
