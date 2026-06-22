@@ -293,6 +293,18 @@ main {
   color: var(--muted);
 }
 
+.leadership-list a {
+  color: var(--ink);
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.leadership-list a:hover {
+  color: var(--blue);
+  text-decoration-color: currentColor;
+}
+
 .project-hero {
   padding: 28px 0 44px;
 }
