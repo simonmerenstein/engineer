@@ -244,6 +244,104 @@ main {
   margin-top: 28px;
 }
 
+.profile-section .section-head {
+  margin-bottom: 30px;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.7fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-copy h3 {
+  margin: 0 0 26px;
+  font-size: clamp(2.05rem, 5vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.resume-block .eyebrow {
+  margin-bottom: 16px;
+}
+
+.resume-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-list li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.resume-list strong {
+  font-size: 1.45rem;
+  line-height: 1.05;
+}
+
+.resume-list span {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.resume-list b {
+  color: var(--ink);
+  font-size: 1.12rem;
+}
+
+.profile-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px 0 0;
+}
+
+.profile-meta div {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.profile-meta dt {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 720;
+  font-size: 0.82rem;
+}
+
+.profile-meta dd {
+  margin: 4px 0 0;
+  font-weight: 720;
+  font-size: 1.05rem;
+}
+
+.profile-photo {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.profile-photo img {
+  width: 100%;
+  aspect-ratio: 0.78;
+  object-fit: cover;
+  object-position: 66% center;
+  background: var(--soft);
+}
+
+.profile-photo figcaption {
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .fact-list,
 .leadership-list,
 .plain-list {
@@ -551,9 +649,14 @@ main {
   .section-head,
   .about-grid,
   .two-col,
+  .profile-layout,
   .leadership-feature,
   .operations-list {
     grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    max-width: 420px;
   }
 }
 
@@ -572,8 +675,14 @@ main {
   .work-grid,
   .stats-grid,
   .image-grid,
-  .mini-grid {
+  .mini-grid,
+  .profile-meta {
     grid-template-columns: 1fr;
+  }
+
+  .resume-list li {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .timeline .step {
