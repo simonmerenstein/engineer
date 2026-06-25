@@ -1,0 +1,5 @@
+.work-card img.project-thumb-contain {
+  object-fit: contain;
+  padding: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7f6 100%);
+}
