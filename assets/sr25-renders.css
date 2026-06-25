@@ -1,0 +1,35 @@
+.render-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.render-showcase img {
+  width: 100%;
+  aspect-ratio: 1.28;
+  object-fit: contain;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.render-showcase .wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 880px) {
+  .render-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .render-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .render-showcase .wide {
+    grid-column: auto;
+  }
+}
