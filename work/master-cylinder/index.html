@@ -19,7 +19,7 @@
         <h1 class="page-title">Hydraulic Brake Master Cylinder</h1>
         <p class="dek">
           A custom 0.5 in bore master cylinder for the CWRU Baja braking system, designed to increase
-          hydraulic advantage, reduce cost from $235 to $37.80, lower weight from 288 grams to 195 grams
+          hydraulic advantage, reduce cost from $470 to $37.80, lower weight from 288 grams to 195 grams
           per master cylinder, and create a compact alternative to purchased commercial units.
         </p>
         <div class="project-meta">
@@ -35,8 +35,8 @@
       <section class="stats-grid" aria-label="Master cylinder highlights">
         <div class="stat"><strong>0.5 in</strong><span>bore diameter, down from the 0.625 in commercial Tilton unit.</span></div>
         <div class="stat"><strong>288g to 195g</strong><span>weight decrease per master cylinder.</span></div>
-        <div class="stat"><strong>2.0 FOS</strong><span>minimum factor of safety.</span></div>
-        <div class="stat"><strong>$235 to $37.80</strong><span>cost reduction from purchased hardware to the in-house design.</span></div>
+        <div class="stat"><strong>2.0 FOS</strong><span>minimum piston factor of safety, with the body at 2.4.</span></div>
+        <div class="stat"><strong>$470 to $37.80</strong><span>cost reduction from purchased hardware to the in-house design.</span></div>
       </section>
   
       <section class="project-section">
@@ -80,9 +80,39 @@
             <div class="phase">Test</div>
             <div>
               <h3>Bench Testing and Vehicle Testing</h3>
-              <p>Bench tested master cylinder to 3000psi. Ran mutliple 4 hour endurances races prior to competition.</p>
+              <p>Bench tested master cylinder to 3000 psi. Ran multiple 4 hour endurance races prior to competition.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-head">
+          <h2>FEA Results</h2>
+          <p>
+            The poster analysis checked the 6061-T6 body and 4140 steel piston against brake load cases
+            using pressure in the bore and thread force at the piston.
+          </p>
+        </div>
+        <div class="image-grid">
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/master-cylinder-body-fea-fos.jpg" data-caption="6061-T6 body static simulation, minimum FOS 2.4">
+              <img src="../../assets/img/master-cylinder-body-fea-fos.jpg" alt="Master cylinder body factor of safety FEA plot">
+            </button>
+            <figcaption>Static simulation of the 6061-T6 master cylinder body with minimum FOS of 2.4. Pressure applied inside the bore; fixed at the bolt hole.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/master-cylinder-body-fea-isoclip.jpg" data-caption="6061-T6 body isoclipped at FOS 2">
+              <img src="../../assets/img/master-cylinder-body-fea-isoclip.jpg" alt="Isoclipped master cylinder body FEA plot">
+            </button>
+            <figcaption>Isoclipped static simulation of the 6061-T6 body at FOS 2. Pressure applied inside the bore; fixed at the bolt hole.</figcaption>
+          </figure>
+          <figure class="image-card contain">
+            <button class="image-button" data-lightbox="../../assets/img/master-cylinder-piston-fea-poster.jpg" data-caption="4140 steel piston static simulation, FOS 2.0">
+              <img src="../../assets/img/master-cylinder-piston-fea-poster.jpg" alt="Master cylinder piston factor of safety FEA plot">
+            </button>
+            <figcaption>Static simulation of the 4140 steel master cylinder piston with FOS of 2.0. Force applied at the threads; fixed on the pressure side.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -93,12 +123,6 @@
               <img src="../../assets/img/master-cylinder-section.webp" alt="Master cylinder section view">
             </button>
             <figcaption>Section view showing bore, piston, ports, spring, cap, and end connections.</figcaption>
-          </figure>
-          <figure class="image-card contain">
-            <button class="image-button" data-lightbox="../../assets/img/master-cylinder-piston-fea.webp" data-caption="Piston finite element analysis">
-              <img src="../../assets/img/master-cylinder-piston-fea.webp" alt="Piston FEA">
-            </button>
-            <figcaption>Piston FEA for the 4140 steel component, with minimum factor of safety around 2.0.</figcaption>
           </figure>
           <figure class="image-card contain">
             <button class="image-button" data-lightbox="../../assets/img/master-cylinder-cam.webp" data-caption="Master cylinder body CAM setup">
